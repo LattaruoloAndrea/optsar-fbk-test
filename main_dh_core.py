@@ -2,7 +2,7 @@ import sys, os, time, json
 import configparser
 import argparse
 from datetime import timedelta
-
+sys.path.append(".")
 # from multiprocessing import freeze_support, set_start_method #some stuff for multi-processing support
 from joblib import Parallel, delayed, parallel_backend
 
