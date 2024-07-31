@@ -75,13 +75,8 @@ def main(datapath, **kwargs):
             logging['MODULE 1'] = {'TIME': str(t_tot) }
             with open(fm.joinpath(outpath,"logging_MODULE 1.txt"),'w') as json_file:
                 json.dump(logging,json_file)          
-                
-          
 
 
-
-
-           
 #---------------------------------------------------------------------------------------------------#
 if (__name__ == '__main__'):
     #MULTIPROCESSING INITIALIZATION
