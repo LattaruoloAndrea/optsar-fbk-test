@@ -8,16 +8,16 @@ isort==5.5.1
 joblib==0.16.0
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
-matplotlib==3.3.1
+matplotlib==3.4.0
 mccabe==0.6.1
 networkx==2.5
-numpy==1.25.2
+numpy==1.23.5
 pandas #==1.1.1
 Pillow==7.2.0
 #pydtw==2.0.2
 pylint==2.6.0
 pyparsing==2.4.7
-python-dateutil==2.8.1
+python-dateutil==2.8.2
 pytz==2020.1
 PyWavelets==1.1.1
 scikit-image #==0.16.2
