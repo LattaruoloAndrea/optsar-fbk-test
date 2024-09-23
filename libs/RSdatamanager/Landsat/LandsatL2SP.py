@@ -2,8 +2,8 @@ import os
 import numpy as np
 from osgeo import gdal, ogr
 from shapely.geometry import mapping, Polygon
-from RSdatamanager import filemanager as fm
-from RSdatamanager.Landsat.Landsatimage import Landsatimg
+from libs.RSdatamanager import filemanager as fm
+from libs.RSdatamanager.Landsat.Landsatimage import Landsatimg
 
 #---------------------------------------------------------------------------------------------------#
 # Landsat_L2SP Image

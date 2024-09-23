@@ -2,8 +2,8 @@ import os, imageio
 import numpy as np
 from osgeo import gdal
 import matplotlib.pyplot as plt
-from RSdatamanager import filemanager as fm
-from RSdatamanager.satimage import SATimg
+from libs.RSdatamanager import filemanager as fm
+from libs.RSdatamanager.satimage import SATimg
 from scipy.ndimage import binary_dilation as bindilation 
 
 class S2img(SATimg):

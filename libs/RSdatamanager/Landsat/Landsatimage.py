@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from RSdatamanager import filemanager as fm
-from RSdatamanager.satimage import SATimg
+from libs.RSdatamanager import filemanager as fm
+from libs.RSdatamanager.satimage import SATimg
 
 class Landsatimg(SATimg):
     

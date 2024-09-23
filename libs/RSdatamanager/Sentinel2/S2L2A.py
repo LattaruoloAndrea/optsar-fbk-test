@@ -2,8 +2,8 @@ import os, imageio, zipfile, time
 import numpy as np
 from osgeo import gdal
 import matplotlib.pyplot as plt
-from RSdatamanager import filemanager as fm
-from RSdatamanager.Sentinel2.s2image import S2img
+from libs.RSdatamanager import filemanager as fm
+from libs.RSdatamanager.Sentinel2.s2image import S2img
 
 ##################################################################################################
 # Sentinel-2 L2A Image 
