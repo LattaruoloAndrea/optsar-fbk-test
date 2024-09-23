@@ -1,7 +1,7 @@
 import os
 import numpy as np
 from osgeo import gdal, ogr
-from shapely.geometry import mapping, Polygon
+#from shapely.geometry import mapping, Polygon
 from libs.RSdatamanager import filemanager as fm
 from libs.RSdatamanager.Landsat.Landsatimage import Landsatimg
 
