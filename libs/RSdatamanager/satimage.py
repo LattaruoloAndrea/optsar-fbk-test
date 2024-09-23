@@ -2,8 +2,8 @@ import os
 import numpy as np
 from osgeo import gdal
 from datetime import datetime
-from RSdatamanager import filemanager as fm
-from RSdatamanager import spectralindices as si
+from libs.RSdatamanager import filemanager as fm
+from libs.RSdatamanager import spectralindices as si
 
 class SATimg:
     # self._metadata
