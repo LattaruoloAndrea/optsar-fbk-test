@@ -1,5 +1,3 @@
-from libs.RSdatamanager import filemanager as fm 
-from libs.RSdatamanager.satimage import SATimg 
 from skimage.exposure import adjust_log
 import numpy as np
 
