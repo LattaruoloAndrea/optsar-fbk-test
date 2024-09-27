@@ -46,7 +46,7 @@ def main(**kwargs):
     outpath = kwargs['options'].get('outpath', None)
     deltemp = kwargs['options'].get('deltemp', True)
     datapath = kwargs['datapath']
-    module1 = kwargs['module1'].get('run', False)
+    module1 = kwargs['module1']
 
     with parallel_backend('loky'):
         if (module1):
