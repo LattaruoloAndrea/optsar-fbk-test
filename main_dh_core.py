@@ -37,14 +37,16 @@ def parallel_tile_reading(tiledict, maindir, sensor, tile_keys, outpath, tilenam
     tiles = Parallel(n_jobs=-1)(delayed(tile_reading_1)(tiledict[k], maindir, sensor) for k in tile_keys)
     Parallel(n_jobs=-1)(delayed(tile_reading_2)(tile, outpath, tilename, year, **kwargs) for tile in tiles for year in years)
 
-def main(project, datapath, options,module1):
+def main(**kwargs):
     #PREPARE SOME TOOLBOX PARAMETERS
-    sensor = options.get('sensor', None)
-    tilename = options.get('tilename', None)
-    years = options.get('years', None)
-    maindir = options.get('maindir', None)
-    outpath = options.get('outpath', None)
-    deltemp = options.get('deltemp', True)
+    sensor = kwargs['options'].get('sensor', None)
+    tilename = kwargs['options'].get('tilename', None)
+    years = kwargs['options'].get('years', None)
+    maindir = kwargs['options'].get('maindir', None)
+    outpath = kwargs['options'].get('outpath', None)
+    deltemp = kwargs['options'].get('deltemp', True)
+    datapath = kwargs['datapath']
+    module1 = kwargs['module1'].get('run', False)
 
     with parallel_backend('loky'):
         if (module1):
@@ -65,4 +67,4 @@ def main(project, datapath, options,module1):
             print("MOD1 TIME = ", t_tot,flush=True)      
             logging['MODULE 1'] = {'TIME': str(t_tot) }
             with open(fm.joinpath(outpath,"logging_MODULE 1.txt"),'w') as json_file:
-                json.dump(logging,json_file)
+                json.dump(logging,json_file)   
